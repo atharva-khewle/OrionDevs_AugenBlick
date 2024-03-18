@@ -4,6 +4,7 @@ import './App.css'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import DashBoard from './pages/Dashboard'
+import Leaderboards from './components/LeaderBoard'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
       <Route path="/" element={<Home/>} />
+      <Route path="/lb" element={<Leaderboards/>} />
       <Route path="/dashboard" element={<DashBoard></DashBoard>} />
         </Routes>
     </Router>
